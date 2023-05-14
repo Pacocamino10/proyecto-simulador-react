@@ -17,7 +17,7 @@ function Plazo({valorPlazoCambiado}) {
           
           
             <label style={{width:"70%",textAlign: "left"}}  htmlFor="customRange2" className="form-label">PLAZO</label>
-            <input type="number" style={{width:"30%"}} value={sliderValue} onChange={(e) => setSliderValue(Number(e.target.value))} />
+            <input type="number" style={{width:"30%",backgroundColor:"blue"}} value={sliderValue} onChange={(e) => setSliderValue(Number(e.target.value))} />
         </div>
         <Slider min={3} max={24} id="customRange2" value={sliderValue} onChange={handleSliderChange} />
         <div style={{display:"flex"}}>

@@ -7,7 +7,7 @@ function Cuotafija({monto,plazo}) {
             CUOTA FIJA POR MES
         </div>
         <div className="card-body" style={{width:"50%"}}>
-            {resultado}
+            $ {resultado}
         </div>
       </div>
     
