@@ -4,11 +4,12 @@ import { useState } from "react";
 import Min3 from "./min3";
 import Max24 from "./max24";
 
-function Plazo() {
+function Plazo({valorPlazoCambiado}) {
 
     const [sliderValue, setSliderValue] = useState(0);
     const handleSliderChange = (value) => {
       setSliderValue(value);
+      valorPlazoCambiado(value)
     };
   return (
     <div>

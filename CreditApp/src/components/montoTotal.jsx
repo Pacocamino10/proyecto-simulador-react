@@ -4,11 +4,12 @@ import { useState } from "react";
 import Min from "./min";
 import Max from "./max";
 
-function MontoTotal() {
+function MontoTotal({ValorMontoCambiado}) {
 
     const [sliderValue, setSliderValue] = useState(0);
     const handleSliderChange = (value) => {
       setSliderValue(value);
+      ValorMontoCambiado(value);
     };
   return (
     <div>

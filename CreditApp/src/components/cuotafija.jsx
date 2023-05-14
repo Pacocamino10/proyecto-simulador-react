@@ -1,4 +1,5 @@
-function Cuotafija() {
+function Cuotafija({monto,plazo}) {
+  let resultado =Math.trunc(monto/plazo)
   return (
     
       <div className="card" style={{backgroundColor : "Blue",flexDirection:"unset",padding:"0px",margin:"10px"}}>
@@ -6,7 +7,7 @@ function Cuotafija() {
             CUOTA FIJA POR MES
         </div>
         <div className="card-body" style={{width:"50%"}}>
-            ll
+            {resultado}
         </div>
       </div>
     

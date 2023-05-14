@@ -1,4 +1,8 @@
+ function btn1() {
+    console.log("hola mundo");
+  }
 function Final() {
+ 
   return (
     <div
       className="btn-group"
@@ -9,6 +13,7 @@ function Final() {
       <button
         type="button"
         className="btn btn-primary"
+        onClick={btn1}
         style={{ backgroundColor: "#15BB68", width: "70%", margin: "1px" }}
       >
         OBTENER CREDITO
@@ -23,6 +28,6 @@ function Final() {
       </button>
     </div>
   );
-}
+    }
 
 export default Final;
